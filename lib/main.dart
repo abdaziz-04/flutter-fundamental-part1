@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:hello_world/basic_widgets/fab_widget.dart';
 import 'package:hello_world/basic_widgets/image_widget.dart';
+import 'package:hello_world/basic_widgets/loading_cupertino.dart';
 import 'package:hello_world/basic_widgets/text_widget.dart';
 
 void main() {
@@ -13,27 +15,65 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
+      title: 'Flutter Demo - Abdul Aziz',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
         useMaterial3: true,
       ),
-      home: const MyHomePage(title: 'Flutter - Abdul Aziz'),
+      // home: const MyHomePage(title: 'Flutter - Abdul Aziz'),
+      home: const MyLayout(),
     );
   }
 }
 
+// PRAK 4 - ALERT
+class MyLayout extends StatelessWidget {
+  const MyLayout({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.all(8.0),
+      child: ElevatedButton(
+          onPressed: () {
+            showAlertDialog(context);
+          },
+          child: Text('Show Alert')),
+    );
+  }
+}
+
+// Fungsi alert
+showAlertDialog(BuildContext context) {
+  // Setup tombol
+  Widget okButton = TextButton(
+    onPressed: () {
+      Navigator.of(context).pop(); // Close the dialog
+    },
+    child: const Text('OK'),
+  );
+
+  // Setup AlertDialog
+  AlertDialog alert = AlertDialog(
+    title: const Text('Alert'),
+    content: const Text('This is my message.'),
+    actions: [
+      okButton,
+    ],
+  );
+
+  // Show the dialog
+  showDialog(
+    context: context,
+    builder: (BuildContext context) {
+      return alert;
+    },
+  );
+}
+
+// KODE LAMA
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key, required this.title});
-
-  // This widget is the home page of your application. It is stateful, meaning
-  // that it has a State object (defined below) that contains fields that affect
-  // how it looks.
-
-  // This class is the configuration for the state. It holds the values (in this
-  // case the title) provided by the parent (in this case the App widget) and
-  // used by the build method of the State. Fields in a Widget subclass are
-  // always marked "final".
 
   final String title;
 
@@ -61,8 +101,9 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            const MyImageWidget(),
-            const MyTextWidget(),
+            const Text(
+              'You have pushed the button this many times:',
+            ),
             Text(
               '$_counter',
               style: Theme.of(context).textTheme.headlineMedium,
@@ -70,11 +111,17 @@ class _MyHomePageState extends State<MyHomePage> {
           ],
         ),
       ),
+      bottomNavigationBar: BottomAppBar(
+        child: Container(
+          height: 50.0,
+        ),
+      ),
       floatingActionButton: FloatingActionButton(
         onPressed: _incrementCounter,
-        tooltip: 'Increment',
+        tooltip: 'Increment Counter',
         child: const Icon(Icons.add),
       ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
     );
   }
 }
