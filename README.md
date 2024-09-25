@@ -27,4 +27,4 @@ FAB tidak saya import karena mengikuti jobsheet
 
 # Praktikum 4 - Alert
 
-![Alt Text](images/alert/gif)
+![Alt Text](images/alert.gif)
