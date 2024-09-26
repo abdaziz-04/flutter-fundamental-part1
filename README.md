@@ -28,3 +28,8 @@ FAB tidak saya import karena mengikuti jobsheet
 # Praktikum 4 - Alert
 
 ![Alt Text](images/alert.gif)
+
+# TUGAS
+
+Pada praktikum 4 mulai dari Langkah 3 sampai 6, buatlah file widget tersendiri di folder basic_widgets, kemudian pada file main.dart cukup melakukan import widget sesuai masing-masing langkah tersebut!
+![Alt Text](images/tugas-2.gif)
