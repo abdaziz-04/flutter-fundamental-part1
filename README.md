@@ -29,6 +29,14 @@ FAB tidak saya import karena mengikuti jobsheet
 
 ![Alt Text](images/alert.gif)
 
+# Praktikum 4 - Input
+
+![alt text](images/input.png)
+
+# Praktikum 4 - Date Time
+
+![alt text](images/dateTime.gif)
+
 # TUGAS
 
 Pada praktikum 4 mulai dari Langkah 3 sampai 6, buatlah file widget tersendiri di folder basic_widgets, kemudian pada file main.dart cukup melakukan import widget sesuai masing-masing langkah tersebut!
