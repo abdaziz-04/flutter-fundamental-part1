@@ -35,5 +35,6 @@ Pada praktikum 4 mulai dari Langkah 3 sampai 6, buatlah file widget tersendiri d
 
 - Pada Emulator
   <img src="images/tugas-2.gif" alt="Alt Text" width="40%" height="40%">
+
 - Device Fisik
-  <img src="images/tugasF-2.gif" alt="Alt Text" width="40%" height="40%">
+  <img src="images/tugasf-2.gif" alt="Alt Text" width="40%" height="40%">
