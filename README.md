@@ -32,4 +32,8 @@ FAB tidak saya import karena mengikuti jobsheet
 # TUGAS
 
 Pada praktikum 4 mulai dari Langkah 3 sampai 6, buatlah file widget tersendiri di folder basic_widgets, kemudian pada file main.dart cukup melakukan import widget sesuai masing-masing langkah tersebut!
-<img src="images/tugas-2.gif" alt="Alt Text" width="50%" height="50%">
+
+- Pada Emulator
+  <img src="images/tugas-2.gif" alt="Alt Text" width="40%" height="40%">
+- Device Fisik
+  <img src="images/tugasF-2.gif" alt="Alt Text" width="40%" height="40%">
