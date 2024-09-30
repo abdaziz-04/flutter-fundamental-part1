@@ -7,8 +7,8 @@ class MyFabWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return FloatingActionButton(
       onPressed: () {},
-      child: const Icon(Icons.thumb_up),
       backgroundColor: Colors.pink,
+      child: const Icon(Icons.thumb_up),
     );
   }
 }

@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hello_world/basic_widgets/date_time_widget.dart';
 import 'package:hello_world/basic_widgets/dialog_widget.dart';
-import 'package:hello_world/basic_widgets/fab_widget.dart';
-import 'package:hello_world/basic_widgets/image_widget.dart';
 import 'package:hello_world/basic_widgets/scaffold_widget.dart';
 import 'package:hello_world/basic_widgets/textfield_widget.dart';
 
@@ -28,7 +26,7 @@ class MyApp extends StatelessWidget {
 }
 
 class MyHomePage extends StatefulWidget {
-  const MyHomePage({Key? key}) : super(key: key);
+  const MyHomePage({super.key});
 
   @override
   _MyHomePageState createState() => _MyHomePageState();
@@ -61,7 +59,7 @@ class _MyHomePageState extends State<MyHomePage> {
         },
         selectedItemColor: Colors.deepPurple,
         unselectedItemColor: Colors.deepPurpleAccent,
-        items: [
+        items: const [
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
             label: 'Scaffold',
