@@ -2,7 +2,14 @@
 
 A new Flutter project.
 
+# Praktikum 1 - Buat projek
+
 ![alt text](images/image.png)
+
+# Praktikum 2 - Jalankan di Perangkat fisik
+
+![alt text](images/fisik.gif)
+saya menggunakan scrcpy untuk menampilkan di laptop kemudian menggunakan wireless debugging
 
 # Praktikum 4 - Terapkan dasar widget
 
@@ -19,7 +26,6 @@ A new Flutter project.
 # Praktikum 5 - FAB
 
 ![alt text](images/image-4.png)
-FAB tidak saya import karena mengikuti jobsheet
 
 # Praktikum 5 - Scaffold
 
