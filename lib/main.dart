@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hello_world/basic_widgets/date_time_widget.dart';
 import 'package:hello_world/basic_widgets/dialog_widget.dart';
+import 'package:hello_world/basic_widgets/fab_widget.dart';
 import 'package:hello_world/basic_widgets/scaffold_widget.dart';
 import 'package:hello_world/basic_widgets/textfield_widget.dart';
 
@@ -39,6 +40,7 @@ class _MyHomePageState extends State<MyHomePage> {
     DialogWidget(),
     TextfieldWidget(),
     DatePickerWidget(),
+    MyFabWidget(),
   ];
 
   @override
@@ -75,6 +77,10 @@ class _MyHomePageState extends State<MyHomePage> {
           BottomNavigationBarItem(
             icon: Icon(Icons.date_range),
             label: 'Date Picker',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.thumb_up),
+            label: 'FAB',
           ),
         ],
       ),
