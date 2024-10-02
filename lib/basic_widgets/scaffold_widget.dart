@@ -20,7 +20,7 @@ class _ScaffoldWidgetState extends State<ScaffoldWidget> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('My Increment App'),
+        title: Center(child: const Text('My Increment App')),
       ),
       body: Center(
         child: Column(

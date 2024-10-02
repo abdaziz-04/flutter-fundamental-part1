@@ -6,7 +6,7 @@ class DialogWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Dialog Example')),
+      appBar: AppBar(title: Center(child: const Text('Dialog Example'))),
       body: Center(
         child: ElevatedButton(
           onPressed: () {

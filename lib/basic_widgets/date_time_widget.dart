@@ -28,7 +28,7 @@ class _DatePickerWidgetState extends State<DatePickerWidget> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text("Date Picker Example")),
+      appBar: AppBar(title: Center(child: const Text("Date Picker Example"))),
       body: Center(
         child: Column(
           mainAxisSize: MainAxisSize.min,
