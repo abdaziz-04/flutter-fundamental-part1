@@ -48,7 +48,7 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: const Text('Flutter Widgets Demo'),
+        title: const Text('Flutter - Abdul Aziz'),
       ),
       body: _pages[_currentIndex],
       bottomNavigationBar: BottomNavigationBar(
